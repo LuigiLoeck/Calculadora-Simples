@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <section class="calculadora">
+      <div class="tela"></div>
+      <div class="botoes">
+        <div class="numero" onclick="numeroClicado(this.textContent)">1</div>
+        <div class="numero" onclick="numeroClicado(this.textContent)">2</div>
+        <div class="numero" onclick="numeroClicado(this.textContent)">3</div>
+        <div
+          id="divisao"
+          class="sinal"
+          onclick="numeroClicado(this.textContent)"
+        >
+          /
+        </div>
+        <div class="numero" onclick="numeroClicado(this.textContent)">4</div>
+        <div class="numero" onclick="numeroClicado(this.textContent)">5</div>
+        <div class="numero" onclick="numeroClicado(this.textContent)">6</div>
+        <div
+          id="multiplicacao"
+          class="sinal"
+          onclick="numeroClicado(this.textContent)"
+        >
+          x
+        </div>
+        <div class="numero" onclick="numeroClicado(this.textContent)">7</div>
+        <div class="numero" onclick="numeroClicado(this.textContent)">8</div>
+        <div class="numero" onclick="numeroClicado(this.textContent)">9</div>
+        <div
+          id="subtracao"
+          class="sinal"
+          onclick="numeroClicado(this.textContent)"
+        >
+          -
+        </div>
+        <div class="limpar" onclick="limparTela()">C</div>
+        <div class="numero" onclick="numeroClicado(this.textContent)">0</div>
+        <div class="resultado" onclick="operacoes()">=</div>
+        <div
+          id="adicao"
+          class="sinal"
+          onclick="numeroClicado(this.textContent)"
+        >
+          +
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
